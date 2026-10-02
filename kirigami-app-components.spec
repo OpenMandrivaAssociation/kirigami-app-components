@@ -3,7 +3,7 @@
 
 Name:		kirigami-app-components
 Version:	1.0.2
-Release:	2
+Release:	3
 Source0:	https://download.kde.org/stable/%{name}/%{name}-%{version}.tar.xz
 Summary:	Kirigami addons for full-featured KDE applications
 URL:		https://invent.kde.org/libraries/kirigami-app-components
