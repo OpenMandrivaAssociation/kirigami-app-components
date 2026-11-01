@@ -2,8 +2,8 @@
 %define devname %mklibname KirigamiActionCollection -d
 
 Name:		kirigami-app-components
-Version:	1.0.2
-Release:	3
+Version:	1.1.1
+Release:	1
 Source0:	https://download.kde.org/stable/%{name}/%{name}-%{version}.tar.xz
 Summary:	Kirigami addons for full-featured KDE applications
 URL:		https://invent.kde.org/libraries/kirigami-app-components
@@ -47,7 +47,10 @@ Requires:	%{libname} = %{EVRD}
 %description -n %{devname}
 Header files and CMake config for %{name}.
 
-%files
+%install -a
+%find_lang %{name}
+
+%files -f %{name}.lang
 %{_qtdir}/qml/org/kde/kirigami/actioncollection
 
 %files -n %{libname}
